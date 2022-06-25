@@ -1,0 +1,34 @@
+CRITICAL - 2022-06-23 22:50:14 --> date_add(): Argument #1 ($object) must be of type DateTime, string given
+#0 D:\XAMPP\htdocs\MiniCore\app\Controllers\Tablas.php(47): date_add('2022-03-01', Object(DateInterval))
+#1 D:\XAMPP\htdocs\MiniCore\system\CodeIgniter.php(832): App\Controllers\Tablas->index()
+#2 D:\XAMPP\htdocs\MiniCore\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tablas))
+#3 D:\XAMPP\htdocs\MiniCore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\XAMPP\htdocs\MiniCore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-23 22:51:07 --> DateTime::diff(): Argument #1 ($targetObject) must be of type DateTimeInterface, string given
+#0 D:\XAMPP\htdocs\MiniCore\app\Controllers\Tablas.php(49): DateTime->diff('2022-03-01')
+#1 D:\XAMPP\htdocs\MiniCore\system\CodeIgniter.php(832): App\Controllers\Tablas->index()
+#2 D:\XAMPP\htdocs\MiniCore\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tablas))
+#3 D:\XAMPP\htdocs\MiniCore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\XAMPP\htdocs\MiniCore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-23 22:51:45 --> Object of class DateTime could not be converted to string
+#0 D:\XAMPP\htdocs\MiniCore\system\View\View.php(210): include()
+#1 D:\XAMPP\htdocs\MiniCore\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 D:\XAMPP\htdocs\MiniCore\system\Common.php(1089): CodeIgniter\View\View->render('Tablas/tabla', Array, true)
+#3 D:\XAMPP\htdocs\MiniCore\app\Controllers\Tablas.php(78): view('Tablas/tabla', Array)
+#4 D:\XAMPP\htdocs\MiniCore\system\CodeIgniter.php(832): App\Controllers\Tablas->index()
+#5 D:\XAMPP\htdocs\MiniCore\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tablas))
+#6 D:\XAMPP\htdocs\MiniCore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\XAMPP\htdocs\MiniCore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-06-23 22:55:20 --> Class "App\Controllers\BaseController" not found
+#0 D:\XAMPP\htdocs\MiniCore\system\Autoloader\Autoloader.php(264): include_once()
+#1 D:\XAMPP\htdocs\MiniCore\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\XAMPP\\htdocs...')
+#2 D:\XAMPP\htdocs\MiniCore\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#4 D:\XAMPP\htdocs\MiniCore\system\CodeIgniter.php(797): class_exists('\\App\\Controller...', true)
+#5 D:\XAMPP\htdocs\MiniCore\system\CodeIgniter.php(406): CodeIgniter\CodeIgniter->startController()
+#6 D:\XAMPP\htdocs\MiniCore\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\XAMPP\htdocs\MiniCore\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
