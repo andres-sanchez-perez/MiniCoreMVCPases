@@ -33,10 +33,10 @@ class Database extends Config
     public $default = [
         'DSN'      => '',
         'hostname' => 'MSI-DE-PIPE',
-        'username' => 'andresao11',
-        'password' => 'Pipesao199909',
+        'username' => 'sa',
+        'password' => '123456',
         'database' => 'MiniCoreMVC',
-        'DBDriver' => 'sqlsrv',//mysqli si van a usar mySQL
+        'DBDriver' => 'sqlsrv', //mysqli si van a usar mySQL
         'DBPrefix' => '',
         'pConnect' => false,
         'DBDebug'  => (ENVIRONMENT !== 'production'),

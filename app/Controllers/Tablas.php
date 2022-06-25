@@ -10,14 +10,15 @@ use DateTime;
 class Tablas extends BaseController{
 
     
-    public function index(){
+    public function index($id=null){
 
         $pases = new Pase();
+
 
         $sql = "SELECT p.id as 'IdPase', u.id as 'IdUsuario',lp.id as 'IdLP',
                 p.FechaCompra, lp.TipoDePase, lp.Cupo, lp.Pases,lp.CostoPase from Pase p
                 join Usuario u on p.idUsuario = u.id
-                join logicaPase lp on p.idLogicaPase = lp.id  ";
+                join logicaPase lp on p.idLogicaPase = lp.id";
 
         $query = $pases->db->query($sql);
         $lista = array();
