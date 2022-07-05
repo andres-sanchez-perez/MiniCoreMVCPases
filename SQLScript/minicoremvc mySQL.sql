@@ -1,4 +1,4 @@
-CREATE DATABASE  IF NOT EXISTS `minicoremvc` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
+CREATE DATABASE  IF NOT EXISTS `minicoremvc` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8_general_ci*/ /*!80016 DEFAULT ENCRYPTION='N' */;
 USE `minicoremvc`;
 -- MySQL dump 10.13  Distrib 8.0.29, for Win64 (x86_64)
 --
@@ -23,7 +23,7 @@ USE `minicoremvc`;
 
 DROP TABLE IF EXISTS `logicapase`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8  */;
 CREATE TABLE `logicapase` (
   `id` int NOT NULL AUTO_INCREMENT,
   `TipoDePase` varchar(20) NOT NULL,
@@ -31,7 +31,7 @@ CREATE TABLE `logicapase` (
   `Pases` int NOT NULL,
   `CostoPase` double NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8  COLLATE=utf8_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -50,7 +50,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `pase`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8  */;
 CREATE TABLE `pase` (
   `id` int NOT NULL AUTO_INCREMENT,
   `idUsuario` int NOT NULL,
@@ -61,7 +61,7 @@ CREATE TABLE `pase` (
   KEY `FK__Pase__idLogicaPa__29572725` (`idLogicaPase`),
   CONSTRAINT `FK__Pase__idLogicaPa__29572725` FOREIGN KEY (`idLogicaPase`) REFERENCES `logicapase` (`id`),
   CONSTRAINT `FK__Pase__idUsuario__286302EC` FOREIGN KEY (`idUsuario`) REFERENCES `usuario` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8  COLLATE=utf8_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -80,12 +80,12 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `usuario`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!50503 SET character_set_client = utf8*/;
 CREATE TABLE `usuario` (
   `id` int NOT NULL AUTO_INCREMENT,
   `Nombre` varchar(40) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8  COLLATE=utf8_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
